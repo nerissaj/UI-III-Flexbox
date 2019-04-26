@@ -129,7 +129,7 @@ flex-wrap: wrap;
   
 	
   .lower-card{ 
-	display: flex;
+	
 	flex-flow:column wrap;
   padding:15px;
   border:2px solid black;
@@ -156,6 +156,46 @@ flex-wrap: wrap;
   .copyright{
 	text-align:center;
 	padding:15px;
-	
-   
+  }
+  /*Services*/
+.services-header-img{
+	padding:20px;
+	justify-content: right;
+}
+ .services-flex-container{
+	display:flex;
+	flex-flow: row-reverse wrap;
+	border-top: 1px solid black;
+	width:800px;
+text-align:center;
+ }
+
+
+ .facts {
+	 flex-direction:row;
+	  border-top:1px solid black;
+	  border-bottom: 20px;
+	  padding:10px;
+	  width:600px;
+	  text-align: left;
+	  
+
+  }
+  .services-lower-card{
+
+  display: flex;
+	flex-flow:column;
+  padding:15px;
+  border:2px solid black;
+  width:320px;
+  height:320px;
+  justify-content:center;
+  margin: 20px auto; 
+  background-color: lightgray;
+  }
+  .list li{
+	  display: list-item; 
+	  list-style-position: inside;
+	list-style-type: square;
+	margin:20px;
   }

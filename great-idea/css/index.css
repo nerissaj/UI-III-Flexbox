@@ -69,107 +69,77 @@ nav a{
 	color: grey;
 	border: solid white;
 	padding: 20px;
-	margin: 40px 20px 15px;
-	
+	margin:20px auto;
   }
+  
   .logo{
-	display:flex;
+	  flex-wrap:nowrap;
+	justify-content: flex-end;
+  }
+  .intro{
+	  text-align:center;
+  }
+  .code{ 
+
 	align-items: center;
-	justify-content:space-between;
-	width:300px;
+    justify-content: left;
+    display: flex;
+    flex-wrap: wrap;
+   }
+   h1{
+	flex-direction: row;
+    font-size: 57px;
+    width: 6em;
+	display: flex;
+   }
+
+ button{
 	
-	
-  }
-  h1{
-	font-size: 80px;
-	text-align:center;
-	margin: 20px;
-  }
-   .code{
-	  
-  }
+	 padding:15px;
+	width:200px;
+	 margin:40px auto;
+	 text-align:left;
+	 border: 1px solid black;
+   }
    
-  button{
-   
-	padding:10px;
-   width:200px;
-	border: 1px solid black;
-	margin:40px auto;
-	text-align:center;
-	position: relative;
-  }
-	h2{
-	  font-size:25px;
+ 
+    .middle-img{
+	justify-content:center;
 	
-  }
-  .middle-img{
-	display:flex;
-	margin:10px;
    
   }
   .flex-container{
-	  display:flex;
-	border-top: 1px solid black;
-	height:900px;
-	width:900px;
-flex-direction: row;
-  }
-  .features{
-	  display:flex;
-  flex-flow: row wrap;
-	padding:15px;
-	border:2px solid black;
-	
-	width:250px;
-	height:250px;
-	justify-content:center;
-	align-content:center;
-   
-  }
-  .about{
-	display: flex;
-	flex-flow:row wrap;
-	justify-content:center;
-	padding:15px;
-	border:2px solid black;
-	width:250px;
-	height:250px;
-	margin-bottom:50px;
-  }
-  .lower-card{ 
-	  display:flex;
-	flex-flow: row wrap;
-	padding:15px;
-	border:2px solid black;
-	margin: 20px auto;
-	width:250px;
-  height:250px;
-	justify-content:space-evenly;
-	align-content:stretch;
-  }
-  .product{
 	display:flex;
-	flex-flow:row wrap;
-	justify-content:space-evenly;
+	border-top: 1px solid black;
+	height:800px;
+	width:800px;
+text-align:center;
+flex-wrap: wrap;
+  }
+  .top-card{	  
+	  display: flex;
+	  flex-flow:column wrap;
 	padding:15px;
 	border:2px solid black;
-	margin: 20px auto;
 	width:250px;
 	height:250px;
-	
+	justify-content:center;
+	margin:20px auto;
   }
-  .vision{
-	align-content:baseline;
-	flex-wrap:wrap;
-	justify-content:space-between;
-	padding:15px;
-	border:2px solid black;
-	margin: 20px auto;
-	width:250px;
-	height:250px;
+  
 	
-	
+  .lower-card{ 
+	display: flex;
+	flex-flow:column wrap;
+  padding:15px;
+  border:2px solid black;
+  width:250px;
+  height:250px;
+  justify-content:center;
+  margin: 20px auto; 
   }
+  
+  
    
   .contact{
 	

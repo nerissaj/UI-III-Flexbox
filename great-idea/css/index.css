@@ -167,9 +167,18 @@ flex-wrap: wrap;
 	flex-flow: row-reverse wrap;
 	border-top: 1px solid black;
 	width:800px;
-text-align:center;
+text-align: left;
+justify-content:space-between;
+align-content: space-around;
  }
+.top{flex-direction:row;
+border-bottom:20px;
+	padding:10px;
+	width:600px;
+	text-align: left;
+	
 
+}
 
  .facts {
 	 flex-direction:row;
@@ -182,20 +191,26 @@ text-align:center;
 
   }
   .services-lower-card{
-
   display: flex;
 	flex-flow:column;
   padding:15px;
   border:2px solid black;
   width:320px;
-  height:320px;
-  justify-content:center;
-  margin: 20px auto; 
+  height:310px;
   background-color: lightgray;
+  align-content: space-between;
+  margin: 20px;
   }
-  .list li{
+   li{
 	  display: list-item; 
+	  
 	  list-style-position: inside;
 	list-style-type: square;
-	margin:20px;
+margin: 20px;
+  }
+ .list .pic{
+display: flex;
+
+	justify-content: flex-end;
+    
   }

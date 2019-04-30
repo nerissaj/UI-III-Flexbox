@@ -174,7 +174,7 @@ border-bottom:20px;
 
 }
 
- .servicesfacts {
+ .facts {
 	 display: flex;
 	 flex-direction:row;
 	  border-top:1px solid black;
@@ -196,7 +196,7 @@ border-bottom:20px;
   align-content: space-between;
   margin: 20px;
   }
-   servicesli{
+   services li{
 	  display: list-item; 
 	  
 	  list-style-position: inside;
@@ -207,5 +207,6 @@ margin: 20px;
 display: flex;
 
 	justify-content: flex-end;
-    
-  }*/
+	}
+
+	}

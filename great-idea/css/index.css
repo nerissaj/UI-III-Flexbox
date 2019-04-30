@@ -73,16 +73,26 @@ nav a{
   }
   
   .logo{
-	  flex-wrap:nowrap;
+	
 	justify-content: flex-end;
   }
   .intro{
-	  text-align:center;
-  }
+		display:inline-flex;
+	  
+	}
+h1	button .code{
+	
+		padding:15px;
+	 width:200px;
+		margin:40px auto;
+		text-align:left;
+		border: 1px solid black;
+		}
+		
   .code{ 
 
 	align-items: center;
-    justify-content: left;
+    justify-content: flex-end;
     display: flex;
     flex-wrap: wrap;
    }
@@ -92,35 +102,25 @@ nav a{
     width: 6em;
 	display: flex;
    }
-
- button{
-	
-	 padding:15px;
-	width:200px;
-	 margin:40px auto;
-	 text-align:left;
-	 border: 1px solid black;
-   }
-   
  
+
     .middle-img{
+			display:flex;
 	justify-content:center;
-	
-   
+  align-self:center; 
   }
   .flex-container{
 	display:flex;
+	flex-direction: row;
 	border-top: 1px solid black;
-	height:800px;
-	width:800px;
+	max-width:800px;
 text-align:center;
 flex-wrap: wrap;
   }
-  .top-card{	  
-	  display: flex;
-	  flex-flow:column wrap;
+  .top-card{	  	
+	  flex-flow:row wrap;
 	padding:15px;
-	border:2px solid black;
+	align-items: center;
 	width:250px;
 	height:250px;
 	justify-content:center;
@@ -129,34 +129,28 @@ flex-wrap: wrap;
   
 	
   .lower-card{ 
-	
-	flex-flow:column wrap;
+	flex-flow:row wrap;
   padding:15px;
-  border:2px solid black;
   width:250px;
   height:250px;
   justify-content:center;
   margin: 20px auto; 
-  }
-  
-  
-   
-  .contact{
+	}
 	
+  address .contact{ 
+		display:flex;
 	border-top: 1px solid black;
-	width:950px;
-	flex-wrap: wrap;
-	margin: 0 auto;
-  }
-  address{
-	padding:0px;
-	margin:20px auto;
+	width:450px;
+	justify-content: flex-start;
 	
   }
   .copyright{
-	text-align:center;
-	padding:15px;
-  }
+		margin:0 auto;
+	justify-content:center;
+	
+	}
+	/*End of 1stpage*/
+
   /*Services*/
 .services-header-img{
 	padding:20px;
@@ -171,7 +165,7 @@ text-align: left;
 justify-content:space-between;
 align-content: space-around;
  }
-.top{flex-direction:row;
+.services-top{flex-direction:row;
 border-bottom:20px;
 	padding:10px;
 	width:600px;
@@ -180,7 +174,8 @@ border-bottom:20px;
 
 }
 
- .facts {
+ .servicesfacts {
+	 display: flex;
 	 flex-direction:row;
 	  border-top:1px solid black;
 	  border-bottom: 20px;
@@ -201,16 +196,16 @@ border-bottom:20px;
   align-content: space-between;
   margin: 20px;
   }
-   li{
+   servicesli{
 	  display: list-item; 
 	  
 	  list-style-position: inside;
 	list-style-type: square;
 margin: 20px;
   }
- .list .pic{
+ .services.list .pic{
 display: flex;
 
 	justify-content: flex-end;
     
-  }
+  }*/

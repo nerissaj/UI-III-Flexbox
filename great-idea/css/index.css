@@ -173,33 +173,31 @@ nav a{
 button{
   background-color: white;
   border: 1px solid black;
-}
-main{
-	display:flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	
+
 }
 section{
 	width:49%;
 }
 .middle-img{
+	
   justify-content: center;
-  align-items: center;
-	margin:0 auto;
+  align-items:  center;
+max-width: 100%;
+flex-direction: column;
 }
 .flex-container{
   display: flex;
   flex-direction:row;
   border-top: 1px solid black;
-  max-width: 100%;	
-
+	max-width: 100%;
+	flex-wrap:wrap;	
 }
 .top-card {
   padding: 15px;
   align-items: center;
   justify-content: center;
-  margin: 20px auto;
+	margin: 20px auto;
+	width:50%
 }
 .lower-card {
   padding: 15px;
@@ -214,7 +212,7 @@ address .contact {
   width: 450px;
   justify-content: flex-start;
 }
-.index-copyright {
+.index-copyright{
   text-align: center;
 }
 /*End of 1stpage*/
@@ -222,17 +220,25 @@ address .contact {
 /*Services*/
 
 .services-header-img{
-
-
 	margin: 20px auto;
-	
+	justify-content:center;
 }
-
+.services{
+	
+	flex-wrap:wrap;
+	flex-direction: row;
+	padding: 15px;
+			align-items: flex-start;
+			justify-content: center;
+			margin: 20px auto;
+			max-width: 100%;
+		border-bottom: 1px solid black;
+	}
 .services-flex-container{
 	padding:15px;
 	display:flex;
 	flex-direction: row;
-	max-width:60%;
+	max-width:800px;
 	flex-wrap:wrap;
 	justify-content:space-between;
 }
@@ -241,8 +247,7 @@ address .contact {
 margin:20px;
   border-bottom: 20px;
   padding: 10px;
-  width: 100%
- ;
+  width: 100%;
 }
 
 

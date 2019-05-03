@@ -150,12 +150,20 @@ h5 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+
+body{
+  max-width: 1000px;
+  margin:0 auto;
+}
+
+
 nav a{
   text-decoration: none;
   color: grey;
   border: solid white;
   padding: 30px;
-  margin: 20px;
+
 }
 .intro{	
 	display:flex;
@@ -171,13 +179,20 @@ nav a{
 	align-content: flex-end;
 }
 button{
+  padding:5px;
   background-color: white;
   border: 1px solid black;
+  margin: 10px 0;
 
 }
 /*section{
 	width:49%;
 }*/
+.logo{
+  display:flex;
+  flex-flow:row wrap;
+  justify-content: flex-end;
+}
 .middle-img{
   display:block;
 padding:15px;
@@ -230,10 +245,10 @@ padding:5px;
 
 .services-header-img{
 	margin: 20px auto;
-	justify-content:center;
+  justify-content:center;
+  width:100%;
 }
 .services{
-	
 	flex-wrap:wrap;
 	flex-direction: row;
 	padding: 15px;
@@ -244,12 +259,12 @@ padding:5px;
 		border-bottom: 1px solid black;
 	}
 .services-flex-container{
-	padding:15px;
+	padding:10px;
 	display:flex;
 	flex-direction: row;
-	max-width:800px;
+	max-width:100%;
 	flex-wrap:wrap;
-	justify-content:space-between;
+	justify-content:space-evenly;
 }
 
 .services-top{
@@ -258,45 +273,54 @@ margin:20px;
   padding: 10px;
   width: 100%;
 }
+.card h2 p{
+  font-size:15px;
+  flex-flow: row wrap;
+  width:350px;
+  height:350px;
 
-
-.card{
-  padding: 15px;
-  border: 2px solid black;
-  width: 325px;
-  height:325px;
-  background-color: lightgray;
-  align-items: center;
-  margin: 20px;
 }
+.card{
+  border: 1px solid black;
+    max-width: 45%;
+    background-color: lightgray;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: space-around;
+    margin: 2.5%;
+    padding:10px;
+  }
 .facts {
   
   border-top: 1px solid black;
-  width: 450px;
+  max-width: 100%;
   justify-content: flex-start;
 padding:15px;
 margin: 20px;
 }
 
 li {
-  display: list-item;
-  list-style-position: outside;
-	list-style-type: square;
-justify-content: center;
-	align-items: center;
-	padding:15px;
-  margin: 20px;
+  margin-left: 35px;
+    display: list-item;
+    list-style-position: outside;
+    list-style-type: square;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
 }
 
+
 .services-info-img {
-display:inline-flex;
-flex-direction: row;
-	justify-content:flex-end;
-	align-items: space-between;
+display:flex;
+flex-direction: row;	
   margin:20px;
+  width:100%;
+
 }
 .list ul{
-	justify-content: center;
+  justify-content: center;
+  width: 50%;
 	
 }
 .copyright{

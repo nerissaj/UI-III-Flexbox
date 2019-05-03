@@ -3,64 +3,328 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
-    font-family: 'Titillium Web', sans-serif;
+html,
+body {
+  height: 100%;
+  font-family: "Titillium Web", sans-serif;
 }
 
-h1, h2, h3, h4, h5 {
-    font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+
+body{
+  max-width: 1000px;
+  margin:0 auto;
+}
+
+
+nav a{
+  text-decoration: none;
+  color: grey;
+  border: solid white;
+  padding: 30px;
+
+}
+.intro{	
+	display:flex;
+	flex-direction: row;
+	align-items:center;
+  font-size: 57px;
+ width: 100%;
+	padding: 15px;
+	justify-content:space-around;
+}
+.flex-items{
+	justify-content: flex-end;
+	align-content: flex-end;
+}
+button{
+  padding:5px;
+  background-color: white;
+  border: 1px solid black;
+  margin: 10px 0;
+
+}
+/*section{
+	width:49%;
+}*/
+.logo{
+  display:flex;
+  flex-flow:row wrap;
+  justify-content: flex-end;
+}
+.middle-img{
+  display:block;
+padding:15px;
+  justify-content: center;
+margin: 20px auto;
+
+}
+.flex-container{
+  display: flex;
+  flex-direction:row;
+  border-top: 1px solid black;
+	max-width: 100%;
+	flex-wrap:wrap;	
+}
+.top-card{
+  padding: 15px;
+  align-items: center;
+  justify-content: center;
+	margin: 20px auto;
+	width:50%
+}
+.lower-card{
+  display:flex;
+  flex-direction:column;
+  padding: 15px;
+  width: 33%;
+  justify-content: center;
+  align-items: center;
+  margin: 0px auto;
+  flex-wrap: wrap;
+
+}
+.contact{
+width:100px;
+}
+address{
+
+padding:5px;
+  width: 450px;
+  justify-content: flex-start;
+}
+.index-copyright{
+  display:flex;
+  align-content: center;
+  justify-content: center;
+}
+/*End of 1stpage*/
+
+/*Services*/
+
+.services-header-img{
+	margin: 20px auto;
+  justify-content:center;
+  width:100%;
+}
+.services{
+	flex-wrap:wrap;
+	flex-direction: row;
+	padding: 15px;
+			align-items: flex-start;
+			justify-content: center;
+			margin: 20px auto;
+			max-width: 100%;
+		border-bottom: 1px solid black;
+	}
+.services-flex-container{
+	padding:10px;
+	display:flex;
+	flex-direction: row;
+	max-width:100%;
+	flex-wrap:wrap;
+	justify-content:space-evenly;
+}
+
+.services-top{
+margin:20px;
+  border-bottom: 20px;
+  padding: 10px;
+  width: 100%;
+}
+.card h2 p{
+  font-size:15px;
+  flex-flow: row wrap;
+  width:350px;
+  height:350px;
+
+}
+.card{
+  border: 1px solid black;
+    max-width: 45%;
+    background-color: lightgray;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: space-around;
+    margin: 2.5%;
+    padding:10px;
+  }
+.facts {
+  
+  border-top: 1px solid black;
+  max-width: 100%;
+  justify-content: flex-start;
+padding:15px;
+margin: 20px;
+}
+
+li {
+  margin-left: 35px;
+    display: list-item;
+    list-style-position: outside;
+    list-style-type: square;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+
+.services-info-img {
+display:flex;
+flex-direction: row;	
+  margin:20px;
+  width:100%;
+
+}
+.list ul{
+  justify-content: center;
+  width: 50%;
+	
+}
+.copyright{
+display:flex;
+margin: 0 auto;
+justify-content: center;
+}

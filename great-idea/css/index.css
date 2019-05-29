@@ -155,6 +155,19 @@ h5 {
 body{
   max-width: 1000px;
   margin:0 auto;
+  padding:20px;
+}
+nav{
+  display: flex; 
+    max-width: 800px;
+  
+    justify-content:center;
+
+}
+.logo{
+  justify-content:flex-end;
+  padding:20px;
+
 }
 
 
@@ -165,34 +178,36 @@ nav a{
   padding: 30px;
 
 }
-.intro{	
-	display:flex;
-	flex-direction: row;
-	align-items:center;
-  font-size: 57px;
- width: 100%;
-	padding: 15px;
-	justify-content:space-around;
+header{
+display:flex;
+  margin:20px;
+  justify-content:center;
 }
-.flex-items{
-	justify-content: flex-end;
-	align-content: flex-end;
+
+h1{
+  font-size:100px;
+  text-align: center;
+  
 }
 button{
   padding:5px;
   background-color: white;
   border: 1px solid black;
-  margin: 10px 0;
+  margin: 10px 80px;
+  width:125px;
 
 }
+ header img{
+  margin-left:80px;
+	justify-content: center;
+	align-items: flex-end;
+}
+
 /*section{
 	width:49%;
 }*/
-.logo{
-  display:flex;
-  flex-flow:row wrap;
-  justify-content: flex-end;
-}
+
+
 .middle-img{
   display:block;
 padding:15px;
@@ -215,18 +230,20 @@ margin: 20px auto;
 	width:50%
 }
 .lower-card{
-  display:flex;
-  flex-direction:column;
+  
   padding: 15px;
   width: 33%;
   justify-content: center;
   align-items: center;
   margin: 0px auto;
-  flex-wrap: wrap;
+  
 
 }
 .contact{
-width:100px;
+  border-top: 1px solid black;
+  padding:15px;
+  width:100%;
+
 }
 address{
 
@@ -234,10 +251,9 @@ padding:5px;
   width: 450px;
   justify-content: flex-start;
 }
-.index-copyright{
-  display:flex;
-  align-content: center;
-  justify-content: center;
+footer{
+  text-align: center;
+  padding:40px;
 }
 /*End of 1stpage*/
 
@@ -274,22 +290,27 @@ margin:20px;
   width: 100%;
 }
 .card h2 p{
-  font-size:15px;
-  flex-flow: row wrap;
-  width:350px;
-  height:350px;
+  font-size:35px;
+  margin-top:40px;
+  
+  
+  
 
 }
-.card{
+.card {
   border: 1px solid black;
     max-width: 45%;
-    background-color: lightgray;
+    background-color: rgb(231, 229, 229);
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-around;
     align-content: space-around;
     margin: 2.5%;
     padding:10px;
+    height:200px;
+  }
+  .learn{
+    margin-left:0;
   }
 .facts {
   
@@ -316,6 +337,7 @@ display:flex;
 flex-direction: row;	
   margin:20px;
   width:100%;
+  
 
 }
 .list ul{
